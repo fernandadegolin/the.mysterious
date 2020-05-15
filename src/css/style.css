@@ -1,0 +1,151 @@
+
+/* .pagina index */
+
+body{
+        font-family: 'Barlow Condensed', sans-serif;
+}
+
+#bt_menu, label{
+        display: none;
+}
+
+.logo img{
+        position: absolute;
+        width: 11%;
+        height: 17%;
+        margin: 0 3em;
+        top: 2em;
+}
+
+nav{ 
+        position: absolute;
+        top: 0.5em;
+        right: 1.5em;
+        font-size: 2.2em;
+        margin: 2em;  
+        
+
+}
+
+	nav li{
+		display: inline;
+	        margin: 0 0 0 1.5em;
+		color: black;
+	}
+
+	nav a { 
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+        }
+        
+        nav a:hover {
+               color: black;
+                text-shadow: 1px 1px white, -1px -1px #444
+        }
+
+        #btnResponsivo{
+                display: none;
+        }
+
+.text{
+        margin: 2em;
+        font-size: 6em;
+        text-align: center;
+        padding: 1.1em;        
+}
+
+
+/* .footer */
+.social{
+        text-align: center;
+        margin: auto;
+        width: 50%;
+}
+
+        .social img{
+                width: 4%;
+                margin: 0.5em;
+                padding: ;
+        }
+
+
+.copy{
+    text-align: center;
+    padding: 1em;
+}
+
+        .copy a{
+                color: black;
+                text-decoration: none;
+        }
+
+
+
+/* .pagina contato */
+.podcast{
+    display: grid;
+    margin: 12em 5em;
+   
+}
+
+
+
+/* .responsivo index*/
+@media screen and (max-width: 480px){
+
+        label[for="bt_menu"]{
+                font-size: 2em;
+                display: block;
+                width: auto;
+                text-align: right;
+                margin: 1.5em 2em;
+                cursor: pointer;
+                visibility: visible;
+        }
+
+        #bt_menu:checked ~ .menu{
+                margin-left: 0;
+        }
+
+        .menu{
+                display: none;
+        }
+       /*  .menu ul{
+                display: grid;
+                font-size: .5em;
+                text-align: right;
+                position: absolute;
+                transition: all .4s;
+
+        } */
+
+
+        .logo img{
+                width: 18%;
+                height: 10%;
+        }
+
+        .text{
+                font-size: 3em;
+                text-align: center;
+                margin: 3em auto;
+        }
+
+        .social img{
+                width: 13%;
+                margin: 1em;
+        }
+        
+}
+
+
+
+@media (min-width: 412){
+        .right .section {
+                border-top: 1px solid #cacaca;
+                padding-top: 9px;
+                padding-bottom: 50px;
+                width: 100%;
+
+}
